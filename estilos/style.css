@@ -26,6 +26,7 @@ header{
 nav{
     text-align: right;
     background-color: rgba(0, 0, 255, 0.432);
+    border-radius: 0px 0px 10px 10px;
 }
 nav > a > img{
     width: 45px;
@@ -50,20 +51,23 @@ nav > a > img.instagram:hover{
 }
 
 main{
-    
+    margin-top: 10px;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: lightgray;
+    border-radius: 10px;
 }
 
 main h1{
     padding-top: 10px;
     text-align: center;
-    color: black;
+    color: rgba(0, 0, 0, 0.842);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
 }
 
 main h2{
     padding-top: 35px;
+    padding-left: 10px;
 
 }
 
@@ -99,6 +103,7 @@ div > ul > li{
    margin-top: 10px;
    border-radius: 20px;
    background-color: black;
+   text-align: center;
 }
 
 div > ul > li.cor1:hover{
@@ -120,6 +125,7 @@ div > ul > li > a{
     text-decoration: none;
     color: white;
     
+    
 }
 
 section{
@@ -128,6 +134,8 @@ section{
 }
 
 table{
+    display: block;
+    margin: auto;
     width: 400px;
     border-collapse: collapse;
 }
