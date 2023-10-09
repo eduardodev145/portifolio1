@@ -10,7 +10,7 @@
 body, html{
     width: 100vw;
     height: 100vh;
-    background-color: blue;
+    background-color: white;
     
 }
 
@@ -25,7 +25,7 @@ header{
 
 nav{
     text-align: right;
-    background-color: white;
+    background-color: rgba(0, 0, 255, 0.432);
 }
 nav > a > img{
     width: 45px;
@@ -50,8 +50,8 @@ nav > a > img.instagram:hover{
 }
 
 main{
-    position: relative;
-    width: 90vw;
+    
+    width: 100vw;
     height: 100vh;
     background-color: white;
 }
@@ -70,21 +70,18 @@ main h2{
 
 main p{
     line-height: 1.5em;
-    padding-top: 70px;
-    width: 250px;
-    text-indent: 20px;
+    padding-top: 10px;
+    margin-left: 15px;
+    width: 90vw;
     text-align: justify;
+    
 }
 
 main > div > img{  /*minha foto*/
-    position: absolute;
     display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(39% ,-140%);
-    
     width: 170px;
     border-radius: 50%;
+    margin: auto;
 
 }
 
@@ -125,6 +122,24 @@ div > ul > li > a{
     
 }
 
+section{
+    margin: 5px 0px 0px 50px;
 
+}
+
+table{
+    width: 400px;
+    border-collapse: collapse;
+}
+
+caption{
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
 
 
