@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+header{
+    background-color: rgba(228, 166, 84, 0.055);
+}
+
+nav{
+    text-align: right;
+}
+nav > a > img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 30px;
+    box-shadow: 2px 2px 5px black;
+    
+}
+
+nav > a > img:hover{
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.432);
+    transition: 0.5s;
+    transform: translate(-2px, -2px);
+}
+
+nav > a > img.github:hover{
+    border: 2px solid green;
+}
+
+nav > a > img.instagram:hover{
+    border:2px solid rgb(133, 7, 133) ;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+main h1{
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+}
+
+main h2{
+    padding-top: 35px;
+
+}
+
+
+main p{
+    line-height: 1.5em;
+    padding-top: 70px;
+    width: 250px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+main > div > img{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(30% ,-130%);
+    
+    width: 170px;
+    border-radius: 50%;
+
+}
+
+main ul{
+    list-style-position: inside;
+}
