@@ -10,7 +10,13 @@
 body, html{
     width: 100vw;
     height: 100vh;
-    background-color: burlywood;
+    background-color: blue;
+    
+}
+
+body, html::-webkit-scrollbar{
+    height: 0px;
+
 }
 
 header{
@@ -19,6 +25,7 @@ header{
 
 nav{
     text-align: right;
+    background-color: white;
 }
 nav > a > img{
     width: 45px;
@@ -44,7 +51,7 @@ nav > a > img.instagram:hover{
 
 main{
     position: relative;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     background-color: white;
 }
@@ -69,18 +76,55 @@ main p{
     text-align: justify;
 }
 
-main > div > img{
+main > div > img{  /*minha foto*/
     position: absolute;
     display: block;
     top: 50%;
     left: 50%;
-    transform: translate(30% ,-130%);
+    transform: translate(39% ,-140%);
     
     width: 170px;
     border-radius: 50%;
 
 }
 
-main ul{
+div > ul{
     list-style-position: inside;
+    list-style-type: none;
+    margin-top: 20px;
 }
+
+div > ul > li{
+   width: 200px;
+   border: 1px solid black;
+   margin-left: 20px;
+   padding: 10px;
+   margin-top: 10px;
+   border-radius: 20px;
+   background-color: black;
+}
+
+div > ul > li.cor1:hover{
+    background-color: #85ADF2;
+    transition: 0.5s;
+}
+
+div > ul > li.cor2:hover{
+    background-color: #2C9F60;  
+    transition: 0.5s;
+}
+
+div > ul > li.cor3:hover{
+    background-color: #FAB301;
+    transition: 0.5s;
+}
+
+div > ul > li > a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+
