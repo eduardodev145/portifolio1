@@ -3,153 +3,127 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body, html{
-    width: 100vw;
+html, body{
     height: 100vh;
+    width: 100vw;
+    
+}
+
+header{
+    height: 60px;
+    
+
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    
+}
+
+nav > a > img{
+    margin-top: 5px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.432);
+}
+
+nav > a > img:hover{
+    border: 2px solid bl;
+    transform: translate(-5%, -5%);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.623);
+}
+
+main{
+    height: 89vh;
+    width: 100vw;
+    margin: auto;
     background-color: white;
     
 }
 
-body, html::-webkit-scrollbar{
-    height: 0px;
-
-}
-
-header{
-    background-color: rgba(228, 166, 84, 0.055);
-}
-
-nav{
-    text-align: right;
-    background-color: rgba(0, 0, 255, 0.432);
-    border-radius: 0px 0px 10px 10px;
-}
-nav > a > img{
-    width: 45px;
-    border-radius: 50%;
-    margin-right: 30px;
-    box-shadow: 2px 2px 5px black;
+section{
     
-}
-
-nav > a > img:hover{
-    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.432);
-    transition: 0.5s;
-    transform: translate(-2px, -2px);
-}
-
-nav > a > img.github:hover{
-    border: 2px solid green;
-}
-
-nav > a > img.instagram:hover{
-    border:2px solid rgb(133, 7, 133) ;
-}
-
-main{
-    margin-top: 10px;
-    width: 100vw;
-    height: 100vh;
-    background-color: lightgray;
-    border-radius: 10px;
-}
-
-main h1{
-    padding-top: 10px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.842);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
-}
-
-main h2{
-    padding-top: 35px;
-    padding-left: 10px;
-
-}
-
-
-main p{
-    line-height: 1.5em;
-    padding-top: 10px;
-    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
     width: 90vw;
-    text-align: justify;
+    height: 300px;
+    background-color: white;
+    margin: 10px auto 0px auto;
+    box-shadow: 3px 3px 3px 8px solid rgba(0, 0, 0, 0.575);
+}
+
+section > div >img{
+    margin: auto;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+section > div > p{
+    line-height: 1.4em;
+   text-align: justify;
+}
+
+aside {
+    
+    width: 90vw;
+    height: 300px;
+    background-color:white;
+    margin: auto;
+}
+
+aside h2{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: 200;
+}
+
+aside ul{
+    display: flex;
+    justify-content: space-evenly;
+     list-style-type: none;
+    list-style-position: inside;
+    
+   
+}
+
+aside > ul > li{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(204, 15, 15);
+    border-radius: 20px;
+}
+
+aside > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+aside > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+
+ table{
+    border-collapse: collapse;
+    margin: 10px auto;
+    width: 400px;
     
 }
 
-main > div > img{  /*minha foto*/
-    display: block;
-    width: 170px;
-    border-radius: 50%;
-    margin: auto;
-
-}
-
-div > ul{
-    list-style-position: inside;
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-div > ul > li{
-   width: 200px;
-   border: 1px solid black;
-   margin-left: 20px;
-   padding: 10px;
-   margin-top: 10px;
-   border-radius: 20px;
-   background-color: black;
+table td{
    text-align: center;
 }
 
-div > ul > li.cor1:hover{
-    background-color: #85ADF2;
-    transition: 0.5s;
-}
-
-div > ul > li.cor2:hover{
-    background-color: #2C9F60;  
-    transition: 0.5s;
-}
-
-div > ul > li.cor3:hover{
-    background-color: #FAB301;
-    transition: 0.5s;
-}
-
-div > ul > li > a{
-    text-decoration: none;
-    color: white;
-    
-    
-}
-
-section{
-    margin: 5px 0px 0px 50px;
-
-}
-
-table{
-    display: block;
-    margin: auto;
-    width: 400px;
-    border-collapse: collapse;
-}
-
-caption{
-    font-weight: bolder;
-    font-size: 2em;
-}
 
 th, td{
     border: 1px solid black;
-    padding: 10px;
-}
-td:nth-child(even){
-    background-color: #85ADF2;
 }
 
