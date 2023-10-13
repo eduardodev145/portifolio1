@@ -1,129 +1,132 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 html, body{
     height: 100vh;
     width: 100vw;
     
+    
 }
 
-header{
-    height: 60px;
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #8c8ceb;
     
-
+    
+    
+    
 }
 
 nav{
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    
-}
-
-nav > a > img{
-    margin-top: 5px;
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.432);
-}
-
-nav > a > img:hover{
-    border: 2px solid bl;
-    transform: translate(-5%, -5%);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.623);
-}
-
-main{
-    height: 89vh;
-    width: 100vw;
-    margin: auto;
-    background-color: white;
-    
-}
-
-section{
-    
-    display: flex;
     flex-direction: column;
-    width: 90vw;
+    align-items: center;
+}
+
+nav > div > img{
     height: 300px;
-    background-color: white;
-    margin: 10px auto 0px auto;
-    box-shadow: 3px 3px 3px 8px solid rgba(0, 0, 0, 0.575);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.596);
 }
 
-section > div >img{
-    margin: auto;
-    display: block;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+nav span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+   color: #112847;
+   font-weight: bolder;
 }
 
-section > div > p{
-    line-height: 1.4em;
-   text-align: justify;
-}
-
-aside {
+nav > div#sobremim > p{
+    text-align: justify;
+    margin: 10px 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     
-    width: 90vw;
-    height: 300px;
-    background-color:white;
-    margin: auto;
+    
 }
 
-aside h2{
-    padding-left: 20px;
-    padding-top: 20px;
-    font-weight: 200;
+nav h2{
+    text-align: center;
 }
 
-aside ul{
+section h3{
+    margin: 15px;
+}
+
+section ul{
     display: flex;
-    justify-content: space-evenly;
-     list-style-type: none;
+    justify-content: space-around;
+    list-style-type: none;
     list-style-position: inside;
     
-   
 }
 
-aside > ul > li{
-    margin-top: 10px;
+section ul > li > a{
+    text-decoration: none;
+    color: black;
     padding: 10px;
-    background-color: rgb(204, 15, 15);
+    background-color: aqua;
     border-radius: 20px;
 }
 
-aside > ul > li > a{
-    text-decoration: none;
-    color: black;
-}
-
-aside > ul > li > a:hover{
+section ul > li > a:hover{
     text-decoration: underline;
 }
 
+section ul > li > a.link1:hover{
+    background-color: blue;
+    transition: 0.5s;
+}
 
- table{
-    border-collapse: collapse;
-    margin: 10px auto;
-    width: 400px;
+section ul > li > a.link2:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+section ul > li > a.link3:hover{
+    background-color: green;
+    transition: 0.5s;
+}
+
+aside{
+    margin-top: 20px;
     
 }
 
-table td{
-   text-align: center;
+nav h2 > a{
+    display: block;
+    background-image: linear-gradient(to right,#7f7feb, black);
+    color: wheat;
 }
 
+aside > table{
+    width: 100vw;
+    
+    border-collapse: collapse;
+}
 
-th, td{
+aside caption{
+    font-size: 1.5em;
+}
+
+table th,td{
     border: 1px solid black;
+    text-align: center;
 }
+
+
+
+
+
+   
+
 
