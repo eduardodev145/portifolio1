@@ -3,10 +3,10 @@
 @media screen and (min-width: 920px) {
 
     body{
-        background-color: black;
+        
     }
     main{
-        background-image: linear-gradient(to top, rgba(0, 0, 255, 0.466), rgba(20, 19, 19, 0.829));
+        
         max-width: 70vw;
         margin: auto;
         
@@ -22,7 +22,7 @@
     }
 
     nav span{
-        color: aqua;
+       
     }
 
     nav > div > img{
