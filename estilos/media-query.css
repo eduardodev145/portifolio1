@@ -44,6 +44,28 @@
         align-self: center;
     }
 
+    span#hamburguer{
+        display: none;
+    }
+
+    section > menu{
+        display: block;
+        
+    }
+
+    section > menu > ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    section > menu > ul > li > a{
+        
+        border: none;
+        border-radius: 20px;
+    }
+
     section > ul{
         display: flex;
         

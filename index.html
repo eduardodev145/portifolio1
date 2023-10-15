@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <main>
         <nav>
             <div id="imagem">
@@ -76,6 +76,14 @@
                 itens.style.display = 'block' // se não ele vai aparecer. a chamada do metodo onclick no icone que vai fazer isso
             }
 
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 920){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display ='none'
+            }
         }
     </script>
 </body>
