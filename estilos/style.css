@@ -64,20 +64,42 @@ section h3{
     margin: 15px;
 }
 
+section menu{
+    display: none;
+}
+
+span#hamburguer{
+    text-align: center;
+    color: #575E49;
+    display: block;
+    background-color:#272b21 ;
+    padding: 5px;
+
+}
+
+span#hamburguer:hover{
+    background-color: #2B331D;
+    color: white;
+    cursor: pointer;
+    
+}
+
 section ul{
-    display: flex;
-    justify-content: space-around;
+    
     list-style-type: none;
     list-style-position: inside;
     
 }
 
 section ul > li > a{
+    text-align: center;
+    display: block;
+    margin: auto;
     text-decoration: none;
     color: black;
     padding: 10px;
     background-color:#575E49 ;
-    border-radius: 20px;
+    border-top: 2px solid #2B331D;
 }
 
 section ul > li > a:hover{
